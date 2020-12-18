@@ -1,7 +1,8 @@
 
-import numpy as np
+import argparse
 from custom_types import Point2D
 import matplotlib.pyplot as plt 
+import numpy as np
 from enum import Enum
 
 START_POS = "S"
