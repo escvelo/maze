@@ -81,7 +81,7 @@ def searchSolutionPath(maze, start_pos):
     maze.updatePosition(start_pos, DEAD_END)
   return found
 
-def run(filename)
+def run(filename):
   maze = Maze(filename)
   result = searchSolutionPath(maze, maze.start_pos)
   if result:
