@@ -8,7 +8,9 @@ START_POS = "S"
 OBSTACLE = "X"
 SOLUTION_PATH = "+"
 TRIED = "."
-DEAD_END = "-"
+DEAD_END = "-"            
+class Path:
+  Found = True
 
 class Maze:
   def __init__(self, filename):
@@ -52,10 +54,6 @@ class Maze:
           self.__setitem__(pos, val)
         if val == SOLUTION_PATH:
             self.solution_path.append(pos)
-            
-            
-class Path:
-  Found = True
 
 def searchSolutionPath(maze, start_pos):
   #  Base cases:
