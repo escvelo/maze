@@ -1,7 +1,7 @@
 
 import argparse
 from custom_types import Point2D
-import matplotlib.pyplot as plt 
+#import matplotlib.pyplot as plt 
 import numpy as np
 from enum import Enum
 
@@ -86,21 +86,22 @@ def run(filename):
   maze = Maze(filename)
   result = searchSolutionPath(maze, maze.start_pos)
   if result:
-    plt.pcolor(mazeobj.get_maze_for_plot())
-    plt.gca().invert_yaxis()
-    plt.show()
+    #plt.pcolor(mazeobj.get_maze_for_plot())
+    #plt.gca().invert_yaxis()
+    #plt.show()
+    print("Found solution path")
+    print("Symbol: '+' indicates the solution path")
+    print("Symbol '-' indicates the tried paths")
     print(maze.maze_mat)
-    print("Squares in Blue indicate solution path")
-    print("Green indicates start position")
   else:
     print("Path Not Found")
 
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser()
-  parser.add_argument('filename')
+  parser.add_argument('filename', help="a data file containing maze")
   args = parser.parse_args()
-  run(args)
+  run(args.filename)
 
 
 
