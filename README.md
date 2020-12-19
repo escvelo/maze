@@ -12,8 +12,9 @@ We employ following procedure to find the exist:
  `pip install numpy`
  
  # Execution
- Follow the steps mentioned in Google Colab link to run the `main.py` script 
- https://colab.research.google.com/drive/1_mAt_vAGv1JGgx_TslVqcm0hUaWX1WOv?usp=sharing
+ Follow the steps mentioned in Google Colab link (https://colab.research.google.com/drive/1_mAt_vAGv1JGgx_TslVqcm0hUaWX1WOv?usp=sharing) 
+ to run the `main.py` script 
+
  ```Shell commands
  git clone https://github.com/escvelo/maze.git
  cd ./maze/
