@@ -3,8 +3,8 @@ We assume that maze is divided up into “squares.” Each square is either free
 
 We employ following procedure to find the exist:
   1) From start position we try going one step to NORTH and recursively repeat the procedure.
-  2) If we fail to find the path then we try to find by going one step to SOUTH and recursively repeat procesure.
-  3) Similarly we try one step to WEST and EAST, each followed by recursive calls.
+  2) If we fail to find the path going NORTH, we try to find by going one step to SOUTH and recursively repeat procesure.
+  3) If we fail going NORTH and SOUTH we try WEST and EAST, each one followed by recursive calls as above.
   4) If none of these directions works then we fail to find the path.
   
  # Requirement
@@ -12,8 +12,6 @@ We employ following procedure to find the exist:
  `pip install numpy`
  
  # Execution
- We require Python 3.7.* and higher. Additionally we `numpy` library which could installed using `pip install numpy`
- 
  Follow the steps mentioned in Google Colab link to run the `main.py` script 
  https://colab.research.google.com/drive/1_mAt_vAGv1JGgx_TslVqcm0hUaWX1WOv?usp=sharing
  ```Shell commands
