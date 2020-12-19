@@ -29,7 +29,7 @@ We employ following procedure to find the exist:
  XOOOSX
  XXXXXX
  ```
- where 'S' denotes starting position, 'X' denotes obstacle and 'O'denotes free space.
+ where 'S' denotes starting position, 'X' denotes obstacle and 'O' denotes free space.
  
  The output is printed on the console. It prints below list.
  ```
