@@ -40,6 +40,20 @@ We employ following procedure to find the exist:
  ```
  where '+' denotes the solution path to exit.
  
+ # Optional bonus questions
+ 
+ ## Find the shortest path ?
+   We could use breadth first search algorithm. When there are multiple paths from start to exit, we could keep track of distance via each path. We could traceback from destination to start that has shortest distance recorded.
+   
+ ## Find all paths
+ We could do this using backtracking. After reaching destination we could assign a unique id to the solution path.
+ 
+ ## Optimise algorithm to find any path as quickly as possible.
+ We could use A* algorithm. Because it has property of completeness and optimality. By optimality it finds best possible solution.
+ 
+ ## Expand to 3 dimensional mazes.
+ This has 3 degrees of freedom. Hence using naive recusive approach is computationally intensive. We could use A* 
+ 
  
  
  
